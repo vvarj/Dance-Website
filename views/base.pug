@@ -1,0 +1,21 @@
+//template inheritance pug - this is the base template or base form
+
+doctype html
+html
+  head
+    title Arj-Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar.navbarclass 
+      ul
+        div#logo
+          img(src='/static/img/logo.png')
+          |A-DA
+        li #[a(href="/") Home]
+        li #[a(href="") Services]
+        li #[a(href="") About Us]
+        li #[a(href="/contact") Contact Us] 
+    block content
+    footer#footer
+      |Copyright © 2021 Arjun | All rights reserved

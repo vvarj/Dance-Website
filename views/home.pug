@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts
+  script(src='/static/script.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSec
+        div Welcome to Arjun's Dance Academy
+        div.small Eat Dance Live Repeat !
+    section#mission
+        h3 Our Mission
+        div.card 
+            h5 Dance Perfection
+            div.card-box
+                div.card-img 
+                    img(src='/static/img/1.jpg')
+                div.card-data 
+                    |This is a dance form
+
+
+        div.card 
+            h5 Dance the way you like
+            div.card-box
+                div.card-img 
+                    img(src='/static/img/2.jpg')
+                div.card-data 
+                    |This is a dance form
+        div.card 
+            h5 Expert teaching
+            div.card-box
+                div.card-img 
+                    img(src='/static/img/3.jpg')
+                div.card-data 
+                    |This is a dance form
+              
+    section#sponsors    
+        h3 Our Sponsers
+        div.spon-img
+            img(src='/static/img/spon1.png')
+            img(src='/static/img/spon2.png')
+            img(src='/static/img/spon3.png')
+
+
+
+
+
+
+

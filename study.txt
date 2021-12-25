@@ -1,0 +1,43 @@
+const mongoose = require('mongoose');
+
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb://localhost:27017/test');
+}
+
+var db =mongoose.connection;
+db.on('error',console.log.bind(console,'connection error'));
+
+db.once('open',function(){
+    console.log('we are connected..');
+})
+
+//defining mongoose schema
+
+const kittySchema = new mongoose.Schema({    //1
+    name: String
+  });
+
+
+  kittySchema.methods.speak = function speak() {    //2
+    const greeting = "my name is "+this.name;
+ 
+    console.log(greeting);
+  };
+
+  const Kitten = mongoose.model('Kitten1', kittySchema);  //3
+  
+  
+  
+  const silence = new Kitten({ name: 'Silence1' });
+  console.log(silence.name); // 'Silence'
+  silence.speak();
+
+silence.save();
+const silence2 = new Kitten({ name: 'Silence2' });
+silence2.save();
+  
+
+
+npm install body-parser === need to be installed to save data to data base

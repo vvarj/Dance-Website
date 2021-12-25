@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+       
+}
+#navbar{
+
+    background-color: rgb(84 63 34);
+   
+   
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    
+    
+}
+
+#navbar li{
+list-style: none;
+padding:20px 35px;
+font-family: 'ZCOOL KuaiLe';
+
+
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   
+    
+}
+
+#navbar li a:hover{
+
+    color: rgb(94, 252, 94);
+    font-weight: bold;
+    
+}
+
+#introSec{
+    font-family: 'ZCOOL QingKe HuangYou';
+    height: 500px;  
+    background-color: rgb(156, 106, 106);
+    background: center / cover no-repeat rgba(0,0,0,0.7)url("/static/danceintro.jpg");
+    background-blend-mode: darken;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-shadow: #000000 3px 2px 11px;
+    
+   
+
+    flex-direction: column;
+}
+
+#introSec div.small{
+    font-size: 1.2rem;
+}
+#mission{
+    
+    height: 300px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    
+    padding: 12px;
+    font-size: 22px;
+    display: block;
+    width: 79%;
+    margin: 0 auto;
+
+}
+
+#mission h3{
+    text-align: center;
+}
+#sponsors{
+    text-align: center;
+    height: 220px;
+    background-color: #ffdf89;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 22px;    
+    padding: 12px;
+   
+}
+
+#footer{
+    height: 40px;
+    background-color: #111010;
+     text-align: center;
+    font-size: 22px;
+    padding: 5px 0px;
+    color: whitesmoke;
+}   
+
+.card{
+    border: 3px black solid;
+    width: 31%;
+    margin: 10px;
+    height: 212px;
+    border-radius: 14px;
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo{
+    display: flex;
+    color: white;
+    margin:0 12px;
+    align-items: center;
+    font-size: 43px;
+    margin-right: 10px;
+     
+}
+
+#logo img{
+    height: 44px;
+    filter: invert(1);
+    padding: 0 8px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 150px;
+}
+
+.card-img img{
+    height: inherit;
+    margin: 5px 8px;
+    padding: 3px 3px;
+}
+
+.card-data{
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.spon-img{
+    display: flex;
+    height: 112px;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.spon-img img{
+    height: inherit;
+    padding: 0 20px;
+}
